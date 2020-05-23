@@ -8,22 +8,21 @@ let stateWork = true;
 
 
 function countdown() {
-    if (minutes < 10){
-        if (seconds < 10){
-            console.log("0" + minutes + ":0" + seconds);
-        }
-        else{
-            console.log("0" + minutes + ":" + seconds);
-        }
+    const hours = Math.floor(minutes/60);
+    const mins = minutes%60;
+    let timeString = "";
+    if (hours > 0) {
+        timeString = hours + ":";
     }
-    else{
-        if (seconds < 10){
-        console.log(minutes + ":0" + seconds);
-        }
-        else{
-            console.log(minutes + ":" + seconds);
-        }
+    if (mins < 10){
+        timeString += "0";
     }
+    timeString += mins + ":";
+    if (seconds < 10){
+        timeString += "0";
+    }
+    timeString += seconds;
+    console.log(timeString);
     if(seconds == 0){
         minutes--;
         seconds = 59;
