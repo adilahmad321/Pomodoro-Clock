@@ -46,6 +46,10 @@ function stopTimer() {
     clearInterval(timer);
 }
 
+function resumeTimer() {
+    timer = setInterval(countdown, 1000);
+}
+
 function resetTimer() {
     stopTimer();
     seconds = 0;
