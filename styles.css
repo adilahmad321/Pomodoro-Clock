@@ -1,0 +1,126 @@
+:root{
+    --bg-color: cyan;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#title {
+    padding-top: 20px;
+    color: white;
+}
+
+#main {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 20pt;
+    text-align: center;
+}
+
+/* Interval controls */
+
+#interval-controls {
+    display: flex;
+    justify-content: space-evenly;
+    width: 350px;
+    text-align: center;
+    padding: 10px;
+    color: white
+}
+
+.interval-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    font-family: Helvetica;
+    font-size: 20pt;
+    padding-bottom: 15px;
+}
+
+.arrow {
+    background-color: transparent;
+    /* width: 5px; */
+    text-align: left;
+    padding: 0;
+    border: none;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.interval-input {
+    width: 30px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    padding: 0;
+    font-size: 20pt;
+}
+
+/* Timer controls */
+
+#tomato {
+    color: white;
+    width: 100%;
+}
+
+#tomato-icon {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 0;
+    max-width: 300px;
+    height: auto;
+}
+
+#clock {
+    position: relative;
+    top: -35%;
+    left: 50%;
+    max-width: 200px;
+    transform: translate(-50%, 0);
+    /* background-color: transparent; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* background-image: url("tomato.svg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* width: 500px; */
+}
+
+.control {
+    color: white;
+    border: none;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.timer-controls {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#timer-text {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 30pt;
+}
