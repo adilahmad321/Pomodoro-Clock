@@ -6,29 +6,31 @@
     </head>
     <body>
         <div id="main">
-            <h1 id="title">Pomodoro Clock</h1>
-            <form id="interval-controls">
-                <div id="session-control" class="interval-controls">
-                    Session
-                    <span id="session-span" class="interval-span">
-                        <input class="arrow" type="button" value="&darr;">
-                        <input type="text" value="25" class="interval-input">
-                        <input class="arrow" type="button" value="&uarr;">
-                    </span>
-                </div>
-                <div id="break-control" class="interval-controls">
-                    Break
-                    <span id="break-span" class="interval-span">
-                        <input class="arrow" type="button" value="&darr;">
-                        <input type="text" value="5" class="interval-input">
-                        <input class="arrow" type="button" value="&uarr;">
-                    </span>
-                </div>
-            </form>
+            <div id="main-div">
+                <h1 id="title">Pomodoro Clock</h1>
+                <form id="interval-controls">
+                    <div id="session-control" class="interval-controls">
+                        Session
+                        <span id="session-span" class="interval-span">
+                            <input class="arrow" type="button" value="&darr;">
+                            <input type="text" value="25" class="interval-input">
+                            <input class="arrow" type="button" value="&uarr;">
+                        </span>
+                    </div>
+                    <div id="break-control" class="interval-controls">
+                        Break
+                        <span id="break-span" class="interval-span">
+                            <input class="arrow" type="button" value="&darr;">
+                            <input type="text" value="5" class="interval-input">
+                            <input class="arrow" type="button" value="&uarr;">
+                        </span>
+                    </div>
+                </form>
+            </div>
             <div id="tomato">
                 <img src="tomato.svg" id="tomato-icon"/>
                 <div id="clock">
-                    <span id="top-controls" class="timer-timer">
+                    <span id="top-controls" class="timer-controls">
                         Interval: Session
                     </span>
                     <h2 id="timer-text">
@@ -37,8 +39,8 @@
                     <span id="bottom-controls" class="timer-controls">
                         <input class="control" type="button" value="&#9658;">
                         <input class="control" type="button" value="||">
-                        <input class="control" type="button" value="&#8634;">
                         <input class="control" type="button" value="&#9632;">
+                        <input class="control" type="button" value="&#8634;">
                     </span>
                 </div>
             </div>
