@@ -114,7 +114,6 @@ function changeWork(n) {
         updateTimerText();
     }
     sessionText.value = workInterval;
-    console.log(workInterval);
 }
 
 function changeRest(n) {
@@ -122,7 +121,6 @@ function changeRest(n) {
         restInterval = n;
     }
     breakText.value = restInterval;
-    console.log(restInterval);
 }
 
 const sessionText = document.getElementById("sessionText");
