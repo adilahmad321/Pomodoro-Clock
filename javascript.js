@@ -108,7 +108,8 @@ function rest() {
 }
 
 function changeWork(n) {
-    if ((n > 0) && (n <= 300)){
+    if ((n !== NaN) && (Number.isInteger(n))
+         && (n > 0) && (n <= 300)){
         workInterval = n;
         minutes = workInterval;
         updateTimerText();
@@ -117,7 +118,8 @@ function changeWork(n) {
 }
 
 function changeRest(n) {
-    if ((n > 0) && (n <= 300)){
+    if ((n !== NaN) && (Number.isInteger(n))
+         && (n > 0) && (n <= 300)){
         restInterval = n;
     }
     breakText.value = restInterval;
