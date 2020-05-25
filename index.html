@@ -13,17 +13,17 @@
                     <div id="session-control" class="interval-controls">
                         Session
                         <span id="session-span" class="interval-span">
-                            <input class="arrow" type="button" value="&darr;">
-                            <input type="text" value="25" class="interval-input">
-                            <input class="arrow" type="button" value="&uarr;">
+                            <input id="sessionDown" class="arrow" type="button" value="&darr;">
+                            <input id="sessionText" type="text" value="25" class="interval-input">
+                            <input id="sessionUp" class="arrow" type="button" value="&uarr;">
                         </span>
                     </div>
                     <div id="break-control" class="interval-controls">
                         Break
                         <span id="break-span" class="interval-span">
-                            <input class="arrow" type="button" value="&darr;">
-                            <input type="text" value="5" class="interval-input">
-                            <input class="arrow" type="button" value="&uarr;">
+                            <input id="breakDown" class="arrow" type="button" value="&darr;">
+                            <input id="breakText" type="text" value="5" class="interval-input">
+                            <input id="breakUp" class="arrow" type="button" value="&uarr;">
                         </span>
                     </div>
                 </form>
@@ -38,10 +38,10 @@
                         25:00
                     </h2>
                     <span id="bottom-controls" class="timer-controls">
-                        <input class="control" type="button" value="&#9658;">
-                        <input class="control" type="button" value="||">
-                        <input class="control" type="button" value="&#9632;">
-                        <input class="control" type="button" value="&#8634;">
+                        <input id="play" class="control" type="button" value="&#9658;">
+                        <input id="pause" class="control" type="button" value="||">
+                        <input id="stop" class="control" type="button" value="&#9632;">
+                        <input id="reset" class="control" type="button" value="&#8634;">
                     </span>
                 </div>
             </div>

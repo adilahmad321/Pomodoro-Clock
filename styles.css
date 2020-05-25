@@ -8,6 +8,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    padding-top: 50px;
 }
 
 #title {
@@ -76,7 +77,7 @@ h1 {
 }
 
 .interval-input {
-    max-width: 30px;
+    max-width: 50px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     background-color: transparent;
